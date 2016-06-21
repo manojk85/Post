@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="wPost.Views.PostView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ViewModels="clr-namespace:wPost.ViewModels"
+             mc:Ignorable="d" >
+    <UserControl.DataContext>
+        <ViewModels:PostViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="290" />
+        </Grid.ColumnDefinitions>
+        <Grid Name="grdPostView"  ScrollViewer.VerticalScrollBarVisibility="Visible">
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="Auto" /> 
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />   
+            </Grid.ColumnDefinitions>
+
+            <ListView Name="LstPatients" Height="500"  
+                  ItemsSource="{Binding Path = Posts}" 
+                  SelectedItem="{Binding Path = SelectedPost}">
+                <ListView.View >
+                    <GridView >
+                        <GridViewColumn Header="Title" 
+                                 Width="100"
+                                    DisplayMemberBinding="{Binding Path=title }" />
+                        <GridViewColumn Header="Description" 
+                                   Width="300"
+                                    DisplayMemberBinding="{Binding Path=body}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Grid Grid.Column="2" Height="600"  Name="grdSelectedRecord">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock TextWrapping="Wrap" Grid.Row="0" Grid.Column="0" Text="User:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock TextWrapping="Wrap" Grid.Row="1" Grid.Column="0" Text="Title:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock TextWrapping="Wrap" Grid.Row="2" Grid.Column="0" Text="Body:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock TextWrapping="Wrap" Grid.Column="1" Grid.Row="0" Margin="3"  Text="{Binding Path=SelectedPost.userId, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged }" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <TextBlock TextWrapping="Wrap" Grid.Column="1" Grid.Row="1" Margin="3" Text="{Binding Path=SelectedPost.title, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged }" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <TextBlock TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" Margin="3"  Text="{Binding Path=SelectedPost.body, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        </Grid>
+    </Grid>
+   
+</UserControl>

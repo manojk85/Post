@@ -1,0 +1,15 @@
+D:\GlobalLogic\wPost\wPostEntities\bin\Debug\wPostEntities.dll
+D:\GlobalLogic\wPost\wPostEntities\bin\Debug\wPostEntities.pdb
+D:\GlobalLogic\wPost\wPostEntities\obj\Debug\wPostEntities.dll
+D:\GlobalLogic\wPost\wPostEntities\obj\Debug\wPostEntities.pdb
+D:\GlobalLogic\wPost\wPostEntities\obj\Debug\wPostEntities.csprojResolveAssemblyReference.cache
+D:\test\wPost\wPostEntities\bin\Debug\wPostEntities.dll
+D:\test\wPost\wPostEntities\bin\Debug\wPostEntities.pdb
+D:\test\wPost\wPostEntities\obj\Debug\wPostEntities.csprojResolveAssemblyReference.cache
+D:\test\wPost\wPostEntities\obj\Debug\wPostEntities.dll
+D:\test\wPost\wPostEntities\obj\Debug\wPostEntities.pdb
+D:\test\GL\wPostEntities\bin\Debug\wPostEntities.dll
+D:\test\GL\wPostEntities\bin\Debug\wPostEntities.pdb
+D:\test\GL\wPostEntities\obj\Debug\wPostEntities.csprojResolveAssemblyReference.cache
+D:\test\GL\wPostEntities\obj\Debug\wPostEntities.dll
+D:\test\GL\wPostEntities\obj\Debug\wPostEntities.pdb

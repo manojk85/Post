@@ -1,0 +1,14 @@
+D:\GlobalLogic\wPost\wPostLayer\bin\Debug\wPostLayer.dll
+D:\GlobalLogic\wPost\wPostLayer\bin\Debug\wPostLayer.pdb
+D:\GlobalLogic\wPost\wPostLayer\obj\Debug\wPostLayer.dll
+D:\GlobalLogic\wPost\wPostLayer\obj\Debug\wPostLayer.pdb
+D:\test\wPost\wPostLayer\bin\Debug\wPostLayer.dll
+D:\test\wPost\wPostLayer\bin\Debug\wPostLayer.pdb
+D:\test\wPost\wPostLayer\obj\Debug\wPostLayer.csprojResolveAssemblyReference.cache
+D:\test\wPost\wPostLayer\obj\Debug\wPostLayer.dll
+D:\test\wPost\wPostLayer\obj\Debug\wPostLayer.pdb
+D:\test\GL\wPostLayer\bin\Debug\wPostLayer.dll
+D:\test\GL\wPostLayer\bin\Debug\wPostLayer.pdb
+D:\test\GL\wPostLayer\obj\Debug\wPostLayer.csprojResolveAssemblyReference.cache
+D:\test\GL\wPostLayer\obj\Debug\wPostLayer.dll
+D:\test\GL\wPostLayer\obj\Debug\wPostLayer.pdb
